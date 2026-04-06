@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: #f8f7f4;
+  color: #0f0f0f;
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+::selection { background: #5b50f0; color: #fff; }
+
+/* Gradient mesh background blobs */
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* 3D card tilt variables */
+.tilt-card {
+  transform-style: preserve-3d;
+  will-change: transform;
+  transition: transform 0.1s ease, box-shadow 0.3s ease;
+}
+.tilt-card-inner {
+  transform: translateZ(20px);
+}
+
+/* Gradient border */
+.grad-border {
+  position: relative;
+  background: #fff;
+  border-radius: 20px;
+}
+.grad-border::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, var(--gb-from), var(--gb-to));
+  z-index: -1;
+}
+
+/* Pill tag */
+.pill {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.72rem; font-weight: 500;
+  padding: 5px 12px; border-radius: 999px;
+  background: rgba(0,0,0,0.05);
+  color: #6b7280;
+  transition: background 0.2s, color 0.2s;
+}
+.pill:hover { background: #5b50f0; color: #fff; }
+
+/* Reveal animation delays */
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
+
+.anim-hidden { opacity: 0; }
