@@ -30,7 +30,7 @@ export default function Contact() {
                 className="font-sans font-800 text-ink tracking-tight mb-6"
                 style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)', lineHeight: 0.95 }}
               >
-                Let's work
+                Let&apos;s work
                 <br />
                 <span
                   style={{
