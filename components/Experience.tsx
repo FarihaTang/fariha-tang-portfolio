@@ -111,12 +111,12 @@ export default function Experience() {
             </span>
             <p className="font-sans font-800 text-ink">MEng Software Engineering</p>
             <p className="font-mono text-xs text-subtle mt-1">
-              Top-tier Chinese university · 2016–2020
+              Top-tier Chinese university · 2017–2020
             </p>
           </div>
           <div className="sm:border-l sm:border-black/5 sm:pl-6 flex flex-col justify-center">
             <p className="font-sans font-800 text-ink">BEng Digital Media Technology</p>
-            <p className="font-mono text-xs text-subtle mt-1">2016–2020</p>
+            <p className="font-mono text-xs text-subtle mt-1">2013–2017</p>
           </div>
         </div>
       </div>
