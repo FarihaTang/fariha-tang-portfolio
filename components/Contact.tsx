@@ -1,11 +1,11 @@
 'use client';
 
 const facts = [
-  { key: 'Location', val: 'Beijing → UK' },
+  { key: 'Location', val: 'Beijing · UK' },
   { key: 'Availability', val: 'H2 2026' },
-  { key: 'Visa', val: 'Skilled Worker required' },
   { key: 'Experience', val: '5 years' },
-  { key: 'Targets', val: 'Wise · Revolut · Monzo' },
+  { key: 'Based in', val: 'Open to remote & hybrid' },
+  { key: 'Industries', val: 'FinTech · HealthTech' },
 ];
 
 export default function Contact() {
@@ -44,8 +44,8 @@ export default function Contact() {
                 </span>
               </h2>
               <p className="font-sans text-base text-muted leading-relaxed max-w-md mb-10">
-                Actively seeking UK frontend roles in fintech. Open to remote or hybrid. Requires
-                Skilled Worker Visa sponsorship. Available H2 2026.
+                Actively seeking frontend roles in fintech and enterprise. Open to remote, hybrid,
+                or on-site. Feel free to reach out — I'd love to connect.
               </p>
 
               <div className="flex flex-wrap gap-3">
@@ -92,6 +92,8 @@ export default function Contact() {
                   <a
                     key={label}
                     href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center gap-2 px-5 py-3 rounded-full font-sans font-600 text-sm
                       text-muted bg-black/4 hover:bg-black/8 hover:text-ink
                       transition-all duration-200"
@@ -131,9 +133,9 @@ export default function Contact() {
 
       <footer className="max-w-6xl mx-auto px-6 py-6 flex justify-between flex-wrap gap-2 border-t border-black/5">
         <p className="font-mono text-xs text-subtle">
-          © 2026 Fariha. Built with Next.js + Tailwind.
+          © 2026 Fariha Tang. Built with Next.js + Tailwind.
         </p>
-        <p className="font-mono text-xs text-subtle">Seeking UK Skilled Worker Visa sponsorship.</p>
+        <p className="font-mono text-xs text-subtle">Open to remote & hybrid roles.</p>
       </footer>
     </>
   );

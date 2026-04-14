@@ -204,9 +204,9 @@ export default function Projects() {
               Projects
             </h2>
           </div>
-          <p className="font-sans text-sm text-muted max-w-xs leading-relaxed">
+          {/* <p className="font-sans text-sm text-muted max-w-xs leading-relaxed">
             Built H1 2026 as part of UK job search prep. All deployed on Vercel.
-          </p>
+          </p> */}
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
