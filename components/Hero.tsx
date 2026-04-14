@@ -137,9 +137,9 @@ export default function Hero() {
             Frontend
           </h1>
         </div>
-        <div className={`mb-12 ${mounted ? 'animate-slide-up delay-200' : 'anim-hidden'}`}>
+        <div className={`mb-6 ${mounted ? 'animate-slide-up delay-200' : 'anim-hidden'}`}>
           <h1
-            className="font-sans font-800 leading-[0.92] tracking-tight pl-16"
+            className="font-sans font-800 leading-[1.15] tracking-tight pl-28"
             style={{
               fontSize: 'clamp(3.8rem, 10vw, 8.5rem)',
               background: 'linear-gradient(135deg, #5b50f0 0%, #7c3aed 50%, #f43f5e 100%)',
@@ -154,13 +154,13 @@ export default function Hero() {
 
         {/* Two-col body */}
         <div
-          className={`grid grid-cols-1 md:grid-cols-2 gap-12 mb-14 ${mounted ? 'animate-slide-up delay-300' : 'anim-hidden'}`}
+          className={`grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-12 mb-12 ${mounted ? 'animate-slide-up delay-300' : 'anim-hidden'}`}
         >
           {/* <span className="text-ink font-600"></span> */}
           {/* Left: description */}
           <div>
-            <p className="font-sans text-base text-muted leading-relaxed mb-4">
-              Frontend Engineer with 5 years of experience in{' '}
+            <p className="font-sans text-base text-muted leading-relaxed mb-4 text-justify">
+              Frontend Engineer with 5+ years of experience in{' '}
               <span className="text-ink font-600">FinTech & HealthTech</span>. Currently leading an
               enterprise platform at China Minsheng Bank serving{' '}
               <span className="text-ink font-600">30,000+ daily users</span> across{' '}
@@ -171,7 +171,7 @@ export default function Hero() {
               expertise in <span className="text-ink font-600">AI Agent</span> and{' '}
               <span className="text-ink font-600">LLM integration</span>.
             </p>
-            <p className="font-sans text-base text-muted leading-relaxed mb-6">
+            <p className="font-sans text-base text-muted leading-relaxed mb-6 text-justify">
               Beyond engineering, I drive projects from{' '}
               <span className="text-ink font-600">ideation to production</span> — from conceiving
               and incubating an enterprise-wide Service Desk (now handling 1,200+ tickets/month) to

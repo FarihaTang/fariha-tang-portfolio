@@ -3,7 +3,7 @@
 const facts = [
   { key: 'Location', val: 'Beijing · UK' },
   { key: 'Availability', val: 'H2 2026' },
-  { key: 'Experience', val: '5 years' },
+  { key: 'Experience', val: '5+ years' },
   { key: 'Based in', val: 'Open to remote & hybrid' },
   { key: 'Industries', val: 'FinTech · HealthTech' },
 ];
