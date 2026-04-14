@@ -45,7 +45,7 @@ export default function Contact() {
               </h2>
               <p className="font-sans text-base text-muted leading-relaxed max-w-md mb-10">
                 Actively seeking frontend roles in fintech and enterprise. Open to remote, hybrid,
-                or on-site. Feel free to reach out — I'd love to connect.
+                or on-site. Feel free to reach out — I&apos;d love to connect.
               </p>
 
               <div className="flex flex-wrap gap-3">
