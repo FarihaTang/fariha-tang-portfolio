@@ -20,7 +20,7 @@ export default function Nav() {
   }, []);
 
   return (
-    <NavBar theme="light" logoAccent=""></NavBar>
+    <NavBar theme="light" logoAccent="" logo="Fangrui Tang (Fariha)"></NavBar>
 
     // <nav
     //   className={`fixed top-12 inset-x-0 z-50 transition-all duration-500 ${
