@@ -72,7 +72,7 @@ const stack = [
 ];
 
 const stats = [
-  { value: '5', suffix: 'yrs', label: 'Experience' },
+  { value: '5', suffix: '+yrs', label: 'Experience' },
   { value: '2', suffix: 'industries', label: 'Fintech · Healthtech' },
   { value: '10', suffix: '+', label: 'Technologies' },
 ];

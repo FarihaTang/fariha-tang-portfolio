@@ -3,9 +3,7 @@
 const facts = [
   { key: 'Location', val: 'Beijing · UK' },
   { key: 'Availability', val: 'H2 2026' },
-  { key: 'Experience', val: '5+ years' },
-  { key: 'Based in', val: 'Open to remote & hybrid' },
-  { key: 'Industries', val: 'FinTech · HealthTech' },
+  { key: 'Based in', val: 'On-site, Hybrid, or Remote' },
 ];
 
 export default function Contact() {
@@ -43,9 +41,12 @@ export default function Contact() {
                   together.
                 </span>
               </h2>
-              <p className="font-sans text-base text-muted leading-relaxed max-w-md mb-10">
-                Actively seeking frontend roles in fintech and enterprise. Open to remote, hybrid,
-                or on-site. Feel free to reach out — I&apos;d love to connect.
+              <p className="font-sans text-base text-muted leading-relaxed max-w-lg mb-10 text-justify">
+                Actively seeking frontend or full-stack roles. I’m looking to join collaborative,
+                innovative teams at companies that value creativity, user-centered design, and
+                meaningful impact. I thrive in environments where learning, mentorship, and clear
+                communication are part of the culture. Feel free to reach out — I&apos;d love to
+                connect.
               </p>
 
               <div className="flex flex-wrap gap-3">
@@ -107,14 +108,14 @@ export default function Contact() {
 
             {/* Right panel */}
             <div
-              className="p-8 md:p-10"
+              className="p-8 md:p-10 md:pt-28"
               style={{
                 background: 'linear-gradient(135deg, #f5f3ff 0%, #ede9fe 100%)',
                 borderLeft: '1px solid rgba(91,80,240,0.1)',
               }}
             >
               <span className="font-mono text-xs text-indigo tracking-widest uppercase mb-6 block">
-                Quick facts
+                Open to work
               </span>
               <dl className="space-y-5">
                 {facts.map(({ key, val }) => (
@@ -135,7 +136,7 @@ export default function Contact() {
         <p className="font-mono text-xs text-subtle">
           © 2026 Fariha Tang. Built with Next.js + Tailwind.
         </p>
-        <p className="font-mono text-xs text-subtle">Open to remote & hybrid roles.</p>
+        {/* <p className="font-mono text-xs text-subtle">Open to remote & hybrid roles.</p> */}
       </footer>
     </>
   );

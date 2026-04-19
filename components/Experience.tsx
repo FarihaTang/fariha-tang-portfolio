@@ -30,7 +30,7 @@ const roles: Role[] = [
         name: 'Unified Employee Channel Platform',
         period: '2024 — Present',
         points: [
-          "Led end-to-end frontend delivery from 0 to 1 on a micro-frontend platform integrating 25+ sub-applications, serving 30,000+ daily active users as the bank's primary staff portal.",
+          "Leading end-to-end frontend delivery from 0 to 1 on a micro-frontend platform integrating 25+ sub-applications, serving 30,000+ daily active users as the bank's primary staff portal.",
           'Achieved sub-2-second First Contentful Paint via code splitting, lazy loading, and asset optimisation across the micro-frontend ecosystem.',
           "Integrated the bank's internal low-code platform to support 35+ workstation layouts; independently delivered 10+ admin configuration modules to production.",
           'Led the build of a cross-application shared component library from 0 to 1, establishing component design standards and documentation targeting reuse across 25+ sub-application teams.',
@@ -211,14 +211,16 @@ export default function Experience() {
             <div>
               <p className="font-sans font-800 text-ink text-sm">MEng Software Engineering</p>
               <p className="font-sans font-600 text-sm text-muted mt-0.5">
-                Huazhong University of Science and Technology (HUST)
+                Huazhong University of Science and Technology, China
               </p>
-              <p className="font-mono text-xs text-subtle mt-1">985 Institution · 2017–2020</p>
+              <p className="font-mono text-xs text-subtle mt-1">
+                985 Institution (Top 10)· 2017–2020
+              </p>
             </div>
             <div className="sm:border-l sm:border-black/5 sm:pl-6">
               <p className="font-sans font-800 text-ink text-sm">BEng Digital Media Technology</p>
               <p className="font-sans font-600 text-sm text-muted mt-0.5">
-                Shandong Technology and Business University
+                Shandong Technology and Business University, China
               </p>
               <p className="font-mono text-xs text-subtle mt-1">2013–2017</p>
             </div>
