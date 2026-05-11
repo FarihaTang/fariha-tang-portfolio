@@ -12,24 +12,12 @@ interface Project {
   gradTo: string;
   bgLight: string;
   iconColor: string;
+  status?: string;
 }
 
 const projects: Project[] = [
   {
     index: '01',
-    title: 'Finance Dashboard',
-    description:
-      'Data-rich analytics dashboard with real-time charts, portfolio tracking, and transaction history. Optimised for performance with virtualised lists and memoized renders.',
-    stack: ['Next.js', 'TypeScript', 'Recharts', 'Tailwind CSS', 'React Query'],
-    github: '#',
-    live: '#',
-    gradFrom: '#5b50f0',
-    gradTo: '#7c3aed',
-    bgLight: '#f5f3ff',
-    iconColor: '#5b50f0',
-  },
-  {
-    index: '02',
     title: 'React Component Library',
     description:
       'Production-ready UI library with Storybook docs, full TypeScript types, and accessibility baked in. Covers 40+ components following atomic design principles.',
@@ -42,7 +30,7 @@ const projects: Project[] = [
     iconColor: '#0ea5e9',
   },
   {
-    index: '03',
+    index: '02',
     title: 'Mini Full-Stack App',
     description:
       'Full-stack app with auth, real-time data, and row-level security. End-to-end TypeScript from Supabase schema to UI — a pattern common in modern fintech products.',
@@ -53,6 +41,21 @@ const projects: Project[] = [
     gradTo: '#f59e0b',
     bgLight: '#fff7ed',
     iconColor: '#f43f5e',
+    status: 'In progress',
+  },
+  {
+    index: '03',
+    title: 'Finance Dashboard',
+    description:
+      'Data-rich analytics dashboard with real-time charts, portfolio tracking, and transaction history. Optimised for performance with virtualised lists and memoized renders.',
+    stack: ['Next.js', 'TypeScript', 'Recharts', 'Tailwind CSS', 'React Query'],
+    github: '#',
+    live: '#',
+    gradFrom: '#5b50f0',
+    gradTo: '#7c3aed',
+    bgLight: '#f5f3ff',
+    iconColor: '#5b50f0',
+    status: 'In progress',
   },
 ];
 
@@ -123,12 +126,14 @@ function TiltCard({ project }: { project: Project }) {
           >
             {project.index}
           </div>
-          <span
-            className="font-mono text-xs px-2.5 py-1 rounded-full"
-            style={{ background: `${project.iconColor}12`, color: project.iconColor }}
-          >
-            In progress
-          </span>
+          {project.status ? (
+            <span
+              className="font-mono text-xs px-2.5 py-1 rounded-full"
+              style={{ background: `${project.iconColor}12`, color: project.iconColor }}
+            >
+              {project.status}
+            </span>
+          ) : null}
         </div>
 
         {/* Title */}
