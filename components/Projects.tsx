@@ -34,8 +34,8 @@ const projects: Project[] = [
     description:
       'Production-ready UI library with Storybook docs, full TypeScript types, and accessibility baked in. Covers 40+ components following atomic design principles.',
     stack: ['React', 'TypeScript', 'Storybook', 'Vitest', 'Rollup'],
-    github: '#',
-    live: '#',
+    github: 'https://github.com/FarihaTang/react-component-library',
+    live: 'https://react-component-library-farihatang.vercel.app/',
     gradFrom: '#0ea5e9',
     gradTo: '#10b981',
     bgLight: '#f0fdf4',
