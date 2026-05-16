@@ -18,6 +18,19 @@ interface Project {
 const projects: Project[] = [
   {
     index: '01',
+    title: 'Finance Mfe Platform',
+    description:
+      'A production-grade "Micro-Frontend architecture demo". Inspired by real-world experience leading frontend development for a platform serving 30,000+ DAU with 25+ integrated sub-applications.',
+    stack: ['Webpack Module Federation', 'React 18', 'TypeScript', 'Zustand'],
+    github: 'https://github.com/FarihaTang/finance-platform-mfe',
+    live: 'https://finance-platform-mfe.vercel.app/',
+    gradFrom: '#f43f5e',
+    gradTo: '#f59e0b',
+    bgLight: '#fff7ed',
+    iconColor: '#f43f5e',
+  },
+  {
+    index: '02',
     title: 'React Component Library',
     description:
       'Production-ready UI library with Storybook docs, full TypeScript types, and accessibility baked in. Covers 40+ components following atomic design principles.',
@@ -28,20 +41,6 @@ const projects: Project[] = [
     gradTo: '#10b981',
     bgLight: '#f0fdf4',
     iconColor: '#0ea5e9',
-  },
-  {
-    index: '02',
-    title: 'Mini Full-Stack App',
-    description:
-      'Full-stack app with auth, real-time data, and row-level security. End-to-end TypeScript from Supabase schema to UI — a pattern common in modern fintech products.',
-    stack: ['Next.js', 'Supabase', 'TypeScript', 'Tailwind CSS', 'Zod'],
-    github: '#',
-    live: '#',
-    gradFrom: '#f43f5e',
-    gradTo: '#f59e0b',
-    bgLight: '#fff7ed',
-    iconColor: '#f43f5e',
-    status: 'In progress',
   },
   {
     index: '03',
