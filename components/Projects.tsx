@@ -44,12 +44,12 @@ const projects: Project[] = [
   },
   {
     index: '03',
-    title: 'Finance Dashboard',
+    title: 'LLM UI Component',
     description:
-      'Data-rich analytics dashboard with real-time charts, portfolio tracking, and transaction history. Optimised for performance with virtualised lists and memoized renders.',
-    stack: ['Next.js', 'TypeScript', 'Recharts', 'Tailwind CSS', 'React Query'],
-    github: '#',
-    live: '#',
+      'Built a React component library for LLM chat interfaces — 6 components with real-time Anthropic API streaming, published to npm and documented in Storybook.',
+    stack: ['React 19', 'TypeScript', 'Tailwind CSS', 'Storybook 8'],
+    github: 'https://github.com/FarihaTang/llm-ui',
+    live: 'https://llm-ui-virid.vercel.app/',
     gradFrom: '#5b50f0',
     gradTo: '#7c3aed',
     bgLight: '#f5f3ff',
