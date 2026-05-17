@@ -54,7 +54,7 @@ const projects: Project[] = [
     gradTo: '#7c3aed',
     bgLight: '#f5f3ff',
     iconColor: '#5b50f0',
-    status: 'In progress',
+    // status: 'In progress',
   },
 ];
 
